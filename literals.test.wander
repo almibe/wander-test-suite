@@ -1,0 +1,32 @@
+[
+    {
+        name = "Int literal"
+        test = 5
+        expected = 5
+    }
+    {
+        name = "Bool literal"
+        test = true
+        expected = true
+    }
+    {
+        name = "String literal"
+        test = "Hello"
+        expected = "Hello"
+    }
+    {
+        name = "Identifier literal"
+        test = <hello>
+        expected = <hello>
+    }
+    {
+        name = "Lambda literal"
+        test = \x -> x
+        expected = \x -> x
+    }
+    {
+        name = "Bytes literal"
+        test = 0xdeadcafe
+        expected = 0xdeadcafe
+    }
+]
