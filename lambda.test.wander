@@ -1,0 +1,7 @@
+[
+    {
+        name = "Define simple lambda and call it"
+        test = let id = \x -> x in id "hello" end
+        expected = "hello"
+    }
+]

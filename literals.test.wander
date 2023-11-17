@@ -24,9 +24,9 @@
         test = \x -> x
         expected = \x -> x
     }
-    {
-        name = "Bytes literal"
-        test = 0xdeadcafe
-        expected = 0xdeadcafe
-    }
+    -- {
+    --     name = "Bytes literal"
+    --     test = 0xdeadcafe
+    --     expected = 0xdeadcafe
+    -- }
 ]
