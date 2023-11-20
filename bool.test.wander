@@ -1,7 +1,7 @@
 [
     {
-        name = "Basic Not test"
-        test = Bool.not false
-        expected = true
+        name = "Basic Not test",
+        test = Bool.not false,
+        expected = true,
     }
 ]
