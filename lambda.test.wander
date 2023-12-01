@@ -1,7 +1,1 @@
-[
-    {
-        name = "Define simple lambda and call it",
-        test = (let id \x -> x, id "hello"),
-        expected = "hello",
-    }
-]
+Test.assertEq "Define simple lambda and call it" (let id \x -> x, id "hello") "hello"

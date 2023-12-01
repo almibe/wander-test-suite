@@ -1,7 +1,1 @@
-[
-    {
-        name = "Basic Not test",
-        test = Bool.not false,
-        expected = true,
-    }
-]
+Test.assertEq "Basic Not test" (Bool.not false) true,
