@@ -1,1 +1,1 @@
-Test.assertEq "Define simple lambda and call it" (let id \x -> x, id "hello") "hello"
+Test.assertEq "Define simple lambda and call it" (id = \x -> x, id "hello") "hello"
