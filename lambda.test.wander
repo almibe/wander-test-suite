@@ -1,1 +1,11 @@
-Test.assertEq "Define simple lambda and call it" (id = \x -> x, id "hello") "hello"
+Test.assertEq "Define simple lambda and call it" 
+    (id = \x -> x, id "hello") 
+    "hello",
+
+Test.assertEq "Partial application of Host Function" 
+    (inc = Int.add 1, inc 4)
+    5,
+
+Test.assertEq "Partial application of lambda" 
+    (middle = \a b c -> b, first = middle nothing, first "hello" "world") 
+    "hello"
