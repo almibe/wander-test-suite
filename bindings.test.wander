@@ -2,11 +2,11 @@
     {
         name = "Make sure name parser is greedy",
         test = (trued = true, trued),
-        result = true
+        expect = true
     },
     {
         name = "Scope shadowing",
         test = (x = 5, (x = 7, x)),
-        result = 7
+        expect = 7
     },
 ]

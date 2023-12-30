@@ -2,7 +2,7 @@
     {
         name = "Basic Not test",
         test = (Bool.not false),
-        result = true
+        expect = true
     },
 ]
 
