@@ -1,0 +1,7 @@
+[
+    {
+        name = "Call record",
+        test = (test = {hello = 5}, test "hello"),
+        expect = 5
+    },
+]
