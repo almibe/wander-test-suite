@@ -1,4 +1,15 @@
+newLines = "hello
+world",
+
+multiLine = "hello
+world",
+
 [
+    {
+        name = "support multi-line Strings",
+        test = multiLine,
+        expect = newLines
+    },
     {
         name = "Basic String Interpolation",
         test = (x = 5, i"x = $(x)"),
