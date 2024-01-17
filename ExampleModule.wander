@@ -1,7 +1,9 @@
 -- This file is a simple module used by modules.test.wander
 
-export x = 5,
+x = 5,
 
-export first = \a b -> a,
+first = \a b -> a,
 
-private = "secret"
+private = "secret",
+
+{ x, first }

@@ -1,4 +1,10 @@
+id i = i,
 [
+    {
+        name = "Test basic definitions.",
+        test = (\i -> i),
+        expect = id
+    },
     {
         name = "Define simple lambda and call it",
         test = (id = \x -> x, id "hello"),
@@ -11,7 +17,7 @@
     },
     {
         name = "Partial application of lambda",
-        test = (middle = \a b c -> b, first = middle nothing, first "hello" "world"),
+        test = (middle = \a b c -> b, first = middle {}, first "hello" "world"),
         expect = "hello"
     },
     {
@@ -20,7 +26,7 @@
             multipleA = multiple 1,
             multipleB = multipleA 2, 
             multipleC = multipleB 3, 
-            multipleC nothing),
+            multipleC {}),
         expect = 5
     },
 ]
